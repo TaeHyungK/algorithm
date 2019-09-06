@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class kakao_openchat {
 	private static final String SUFFIX_ENTER = "님이 들어왔습니다.";
@@ -13,60 +12,40 @@ public class kakao_openchat {
 	}
 
 	public static String[] solution(String[] records) {
-		ArrayList<String> logs = new ArrayList<String>();
+		ArrayList<String> ids = new ArrayList<String>();
 		HashMap<String, String> nicknameMap = new HashMap<String, String>();
 		ArrayList<String> actions = new ArrayList<String>();
 
-		for (int i = 0; i < records.length; i++) {
-			String record = records[i];
-			String log = "";
-			String[] splitRecord = record.split(" ");
+		for (String r : records) {
+			String[] splitRecord = r.split(" ");
 			
 			String action = splitRecord[0];
 			String id = splitRecord[1];
 			
-			if ("Enter".equalsIgnoreCase(action)) {
-				actions.add(action);
-				logs.add(id);
-				
+			// Enter, Change 시
+			if (splitRecord.length == 3) {
 				String nickname = splitRecord[2];
 				nicknameMap.put(id, nickname);
-			} else if ("Leave".equalsIgnoreCase(action)) {
+			};
+			
+			// Enter, Leave 시
+			if (!"Change".equals(action)) {
 				actions.add(action);
-				logs.add(id);
-			} else if ("Change".equalsIgnoreCase(action)) {
-				String nickname = splitRecord[2];
-				nicknameMap.put(id, nickname);
+				ids.add(id);
 			}
 		}
 		
-		Iterator<String> keys = nicknameMap.keySet().iterator();
-		while (keys.hasNext()) {
-			String key = keys.next();
-			for (int i = 0; i < logs.size(); i++) {
-				logs.set(i, logs.get(i).replace(key, nicknameMap.get(key)));
-			}
+		String[] answer = new String[ids.size()];
+		for (int i = 0; i < answer.length; i++) {
+			String result = nicknameMap.get(ids.get(i));
+			result += getActions(i, actions);
+			answer[i] = result;
 		}
 		
-		for (int i = 0; i < logs.size(); i++) {
-			String action = getSuffix(actions.get(i));
-			logs.set(i, logs.get(i) + action);
-		}
-		
-		System.out.println(logs);
-
-		String[] answer = logs.toArray(new String[logs.size()]);
 		return answer;
 	}
 	
-	private static String getSuffix(String action) {
-		String result = "";
-		if ("Enter".equalsIgnoreCase(action)) {
-			result = SUFFIX_ENTER;
-		} else if ("Leave".equalsIgnoreCase(action)) {
-			result = SUFFIX_LEAVE;
-		}
-		
-		return result;
+	public static String getActions(int i, ArrayList<String> actions) {
+		return actions.get(i).equals("Enter") ? SUFFIX_ENTER : SUFFIX_LEAVE;
 	}
 }
