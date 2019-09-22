@@ -45,3 +45,14 @@
 - [프로그래머스 > 문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q12
   
+- [프로그래머스 > 문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q13
+
+- [프로그래머스 > 서울에서 김서방 찾기](https://programmers.co.kr/learn/courses/30/lessons/12919)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q14
+
+- [프로그래머스 > 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921_
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q15
+  
+- [프로그래머스 > 수박수박수박수](https://programmers.co.kr/learn/courses/30/lessons/12922_
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q16
