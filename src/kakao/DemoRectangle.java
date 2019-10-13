@@ -1,4 +1,6 @@
-class Solution {
+package src.kakao;
+
+class DemoRectangle {
     public int[] solution(int[][] v) {
         int[] x = new int[v.length];
         int[] y = new int[v.length];
