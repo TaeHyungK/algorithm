@@ -1,4 +1,4 @@
-package src.kakao;
+package kakao;
 
 class DemoRectangle {
     public int[] solution(int[][] v) {

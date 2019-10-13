@@ -1,9 +1,0 @@
-import java.util.*;
-
-class Solution {
-  public String solution(String[] seoul) {
-        List<String> temp = Arrays.asList(seoul);
-		int index = temp.indexOf("Kim");
-		return "김서방은 " + index + "에 있다";
-  }
-}
