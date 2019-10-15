@@ -59,3 +59,6 @@
 
 - [프로그래머스 > 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q17
+    
+- [프로그래머스 > 정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q18
