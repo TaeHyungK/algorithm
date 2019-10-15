@@ -56,3 +56,6 @@
   
 - [프로그래머스 > 수박수박수박수](https://programmers.co.kr/learn/courses/30/lessons/12922)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q16
+
+- [프로그래머스 > 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q17
