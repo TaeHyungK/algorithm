@@ -62,3 +62,6 @@
     
 - [프로그래머스 > 정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q18
+
+- [프로그래머스 > 제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q19
