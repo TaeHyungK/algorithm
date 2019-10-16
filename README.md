@@ -68,3 +68,6 @@
   
 - [프로그래머스 > 짝수와 홀수](https://programmers.co.kr/learn/courses/30/lessons/12937)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q20
+  
+- [프로그래머스 > 최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q21
