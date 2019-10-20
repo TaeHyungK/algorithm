@@ -83,3 +83,6 @@
   
 - [프로그래머스 > 핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q25
+  
+- [프로그래머스 > 행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q26
