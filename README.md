@@ -92,3 +92,6 @@
   
 - [프로그래머스 > 직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q28
+
+- [프로그래머스 > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q29
