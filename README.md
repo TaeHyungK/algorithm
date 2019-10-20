@@ -86,3 +86,6 @@
   
 - [프로그래머스 > 행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q26
+  
+-[프로그래머스 > x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q27
