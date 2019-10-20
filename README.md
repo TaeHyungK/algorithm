@@ -80,3 +80,6 @@
   
 - [프로그래머스 > 하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
   - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q24
+  
+- [프로그래머스 > 핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
+  - https://github.com/TaeHyungK/algorithm/blob/master/PGLevel1Q25
