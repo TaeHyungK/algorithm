@@ -1,5 +1,7 @@
 # Algorithm
 
+**Level1**
+
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/kakao_openchat.java
 
@@ -35,7 +37,7 @@
   
 - [프로그래머스 > 두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q9.java
- 
+
 - [프로그래머스 > 문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q10.java
   
@@ -59,7 +61,7 @@
 
 - [프로그래머스 > 정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q17.java
-    
+  
 - [프로그래머스 > 정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q18.java
 
@@ -95,3 +97,8 @@
 
 - [프로그래머스 > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q29.java
+  
+**Level2**
+
+- [프로그래머스 > 다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q1.java
