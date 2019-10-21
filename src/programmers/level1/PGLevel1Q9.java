@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 class PGLevel1Q9 {
     public long solution(int a, int b) {

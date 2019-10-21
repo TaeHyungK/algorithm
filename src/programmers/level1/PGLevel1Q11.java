@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 class PGLevel1Q11 {
     boolean solution(String s) {

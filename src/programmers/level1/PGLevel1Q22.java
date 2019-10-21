@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 /**
  * 937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면,

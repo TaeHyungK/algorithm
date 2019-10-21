@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 /**
  * 임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.

@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 class PGLevel1Q15 {
     public int solution(int n) {
