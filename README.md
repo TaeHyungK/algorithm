@@ -6,7 +6,7 @@
   - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/kakao_openchat.java
 
 - 프로그래머스 데모 테스트 1번문제 (직사각형 좌표3개를 통해 좌표1개 구하기)
-  - hhttps://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoRectangle.java
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoRectangle.java
   
 - 프로그래머스 데모 테스트 2번문제 (별찍기)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoStar.java
@@ -107,4 +107,4 @@
   - 정규 표현식 사용하여 도전 -> 실패. 정규 표현식 더 공부 후 다시 도전해보면 좋을 듯 함
     - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2UseMatch.java
   - 일반적으로 풀이
-    - temp
+    - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2.java
