@@ -2,15 +2,6 @@
 
 **Level1**
 
-- [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
-  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/kakao_openchat.java
-
-- 프로그래머스 데모 테스트 1번문제 (직사각형 좌표3개를 통해 좌표1개 구하기)
-  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoRectangle.java
-  
-- 프로그래머스 데모 테스트 2번문제 (별찍기)
-  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoStar.java
-
 - [프로그래머스 > 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q1.java
   
@@ -108,3 +99,17 @@
     - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2UseMatch.java
   - 일반적으로 풀이
     - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2.java
+    
+**Coding Test**
+
+- [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/kakao_openchat.java
+
+- 프로그래머스 데모 테스트 1번문제 (직사각형 좌표3개를 통해 좌표1개 구하기)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoRectangle.java
+  
+- 프로그래머스 데모 테스트 2번문제 (별찍기)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/DemoStar.java
+
+- 코딜리티 데모 테스트 (숫자 찾기(?))
+ - https://github.com/TaeHyungK/algorithm/blob/master/src/codility/DemoTest.java
