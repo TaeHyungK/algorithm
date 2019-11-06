@@ -99,6 +99,9 @@
     - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2UseMatch.java
   - 일반적으로 풀이
     - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q2.java
+
+- [프로그래머스 > 탑](https://programmers.co.kr/learn/courses/30/lessons/42588)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q3.java
     
 **Coding Test**
 
