@@ -102,7 +102,10 @@
 
 - [프로그래머스 > 탑](https://programmers.co.kr/learn/courses/30/lessons/42588)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q3.java
-    
+  
+- [프로그래머스 > 124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q4.java
+  
 **Coding Test**
 
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
