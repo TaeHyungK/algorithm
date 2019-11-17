@@ -106,6 +106,10 @@
 - [프로그래머스 > 124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q4.java
   
+- [프로그래머스 > 프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q5.java
+    - 스택/큐에 대한 이해가 더 필요할 것 같다. PriorityQueue를 이용하면 우선순위에 대한 정렬만 되고 poll 된 후 그 뒤에 인덱스부터 순차적으로 보지 못한다...
+  
 **Coding Test**
 
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
