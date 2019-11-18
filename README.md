@@ -110,6 +110,10 @@
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q5.java
     - 스택/큐에 대한 이해가 더 필요할 것 같다. PriorityQueue를 이용하면 우선순위에 대한 정렬만 되고 poll 된 후 그 뒤에 인덱스부터 순차적으로 보지 못한다...
   
+- [프로그래머스 > 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q6.java
+    - 스택/큐 문제지만 스택을 사용하면 안되는 아이러니한 문제... 내가 스택을 이용해서 못푼 것인지는 모르겠지만.. 스택으로 푸려다가 포기하고 생각의 흐름대로 풀었다..
+
 **Coding Test**
 
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
