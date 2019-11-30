@@ -114,6 +114,10 @@
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q6.java
     - 스택/큐 문제지만 스택을 사용하면 안되는 아이러니한 문제... 내가 스택을 이용해서 못푼 것인지는 모르겠지만.. 스택으로 푸려다가 포기하고 생각의 흐름대로 풀었다..
 
+- [프로그래머스 > 쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585)
+  -  https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q6.java
+    - makeRazerX() 와 makeIronX() 가 비슷하면서 조금 다르다. 하나로 합쳐서 짜면 더 깔끔하게 짤 수 있을 것 같다.
+
 **Coding Test**
 
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
