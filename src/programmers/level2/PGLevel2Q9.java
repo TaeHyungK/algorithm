@@ -1,7 +1,7 @@
 package programmers.level2;
 
 import java.util.ArrayList;
-import java.util.Stack;
+import java.util.HashSet;
 
 /**
  * 문제 설명
@@ -29,51 +29,67 @@ import java.util.Stack;
 
 public class PGLevel2Q9 {
     public static void main(String[] args) {
-        String numbers = "17";
+        String numbers = "173";
         System.out.println(solution(numbers));
     }
 
-    static String[] mStrArray = null;
+    private static ArrayList<Integer> mPrimeList;
+    private static HashSet<Integer> mWords;
 
     public static int solution(String numbers) {
         int answer = 0;
 
-        mStrArray = numbers.split("");
-        Stack<Integer> stack = new Stack<>();
-        makeWord(mStrArray.length, stack, mStrArray.length);
+        String[] strArray = numbers.split("");
 
+        String size = "";
+        for (int i = 0; i < strArray.length; i++) {
+            size += "9";
+        }
+        // 최대 자릿 수 만큼 소수 리스트 생성
+        mPrimeList = getPrime(Integer.parseInt(size));
 
-        return answer;
+        permutation(numbers);
+
+        return mWords.size();
     }
 
-    private static void makeWord(int size, Stack<Integer> stack, int r) {
-        String[] result = null;
-        if (r == 0) {
-            result = new String[stack.size() + 1];
-            for (int i = 0; i < stack.size(); i++) {
-                System.out.print(mStrArray[i]);
+    // TODO nCn 만 됨.... nC1, nC2... 되도록 수정 필요
+    public static void permutation(String str) {
+        permutation("", str);
+    }
+
+    private static void permutation(String prefix, String str) {
+        int n = str.length();
+        if (n == 0) {
+            if (mWords == null) {
+                mWords = new HashSet<>();
             }
-        }
-
-        int smallest = stack.isEmpty() ? 0 : stack.lastElement() + 1;
-
-        for (int i = smallest; i < size; i++) {
-            stack.push(i);
-            makeWord(size, stack, r - 1);
-            stack.pop();
+            int word = Integer.parseInt(prefix);
+            System.out.println(word);
+            if (checkPrime(word)) {
+                mWords.add(word);
+            }
+        } else {
+            for (int i = 0; i < n; i++)
+                permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n));
         }
     }
 
     private static boolean checkPrime(int num) {
         boolean result = false;
 
-
+        for (int prime : mPrimeList) {
+            if (prime == num) {
+                result = true;
+                break;
+            }
+        }
 
         return result;
     }
 
     /**
-     * 에라토스테네스의 체를 이용해 소수 찾기
+     * 에라토스테네스의 체를 이용해 소수 만들
      * @param size 숫자의 범위
      * @return
      */
