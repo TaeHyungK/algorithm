@@ -1,6 +1,8 @@
 # Algorithm
 
-**Level1**
+### 프로그래머스
+
+#### Level1
 
 - [프로그래머스 > 완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q1.java
@@ -89,7 +91,7 @@
 - [프로그래머스 > 예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level1/PGLevel1Q29.java
   
-**Level2**
+#### Level2
 
 - [프로그래머스 > 다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q1.java
@@ -121,8 +123,17 @@
 - [프로그래머스 > 가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
     -  https://github.com/TaeHyungK/algorithm/blob/master/src/programmers/level2/PGLevel2Q8.java
      - compareTo() 메소드를 사용하는 것이 놓치는 부분 없이 된다.. 직접 명시적으로 쓰는 것 보다 더 안전할 수 있다. 
-     
-**Coding Test**
+    
+### Goorm
+
+- [시공의 폭풍 속으로 (★1)](https://edu.goorm.io/learn/lecture/15551/%EB%A7%A4%EC%A3%BC-%EB%B0%B0%EC%86%A1%EB%B0%9B%EB%8A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%84%ED%81%B4%EB%A6%AC-%EB%B9%84%ED%83%80%EC%95%8C%EA%B3%A0-%EC%8B%9C%EC%A6%8C2/lesson/726506/09%EC%9B%94-1%EC%A3%BC%EC%B0%A8-%EC%8B%9C%EA%B3%B5%EC%9D%98-%ED%8F%AD%ED%92%8D-%EC%86%8D%EC%9C%BC%EB%A1%9C-1)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/goorm/Q726506.java
+- [수의 비밀 (★1)](https://edu.goorm.io/learn/lecture/15551/%EB%A7%A4%EC%A3%BC-%EB%B0%B0%EC%86%A1%EB%B0%9B%EB%8A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%84%ED%81%B4%EB%A6%AC-%EB%B9%84%ED%83%80%EC%95%8C%EA%B3%A0-%EC%8B%9C%EC%A6%8C2/lesson/736433/09%EC%9B%94-1%EC%A3%BC%EC%B0%A8-%EC%88%98%EC%9D%98-%EB%B9%84%EB%B0%80-1)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/goorm/Q736433.java
+- [애틋한 친구 (★1)](https://edu.goorm.io/learn/lecture/15551/%EB%A7%A4%EC%A3%BC-%EB%B0%B0%EC%86%A1%EB%B0%9B%EB%8A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%9C%84%ED%81%B4%EB%A6%AC-%EB%B9%84%ED%83%80%EC%95%8C%EA%B3%A0-%EC%8B%9C%EC%A6%8C2/lesson/761937/09%EC%9B%94-2%EC%A3%BC%EC%B0%A8-%EC%95%A0%ED%8B%8B%ED%95%9C-%EC%B9%9C%EA%B5%AC-1)
+  - https://github.com/TaeHyungK/algorithm/blob/master/src/goorm/Q761937.java
+
+### Coding Test
 
 - [2018년 KAKAO BLIND RECRUITMENT > 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
   - https://github.com/TaeHyungK/algorithm/blob/master/src/kakao/kakao_openchat.java
