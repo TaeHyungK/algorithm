@@ -1,7 +1,6 @@
 package necessary;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 필수로 알고 있어야할 알고리즘
@@ -22,11 +21,27 @@ public class NecessaryAlgorithm {
         str= "abacde";
         System.out.println("가장 긴 회문 문자열의 길이 구하기 str= " + str + ", result= " + algorithm.getLongestPalindrome(str));
 
-        System.out.println("=======================================");
-        System.out.println("소수구하기 = " + algorithm.getPrimeTest(200));
-        System.out.println("올바른 괄호 체크 = " + algorithm.isCorrectedTest("()(())()"));
-        System.out.println("문자열 압축하기 = " + algorithm.strCompressTest("aabddeffabbffeeeee"));
-        System.out.println("가장 긴 회문 문자열 구하기 = " + algorithm.getPalindrome("aaabbbaacce"));
+        int n = 10;
+        System.out.println("for문을 이용하지 않고 1~n까지의 합 구하기 n = " + n + ", result= " + algorithm.recursiveSum(n));
+        n = 50;
+        JumpingNumber jumpingNumber = new JumpingNumber();
+        System.out.println("각 자리수가 1차이 나는 값 찾기(Jumping Number Sequenece)");
+        jumpingNumber.printJumpingNumbers(n);
+
+        System.out.println();
+        algorithm.bubbleSort(new int[]{4, 3, 1, 5, 9});
+
+        DecimalToBinary decimalToBinary = new DecimalToBinary();
+        decimalToBinary.printBinary(5);
+
+        RandomShuffle randomShuffle = new RandomShuffle();
+        randomShuffle.printArrayShuffle(new int[]{4, 3, 1, 5, 9});
+
+//        System.out.println("=======================================");
+//        System.out.println("소수구하기 = " + algorithm.getPrimeTest(200));
+//        System.out.println("올바른 괄호 체크 = " + algorithm.isCorrectedTest("()(())()"));
+//        System.out.println("문자열 압축하기 = " + algorithm.strCompressTest("aabddeffabbffeeeee"));
+//        System.out.println("가장 긴 회문 문자열 구하기 = " + algorithm.getPalindrome("aaabbbaacce"));
     }
 
     /**
@@ -225,5 +240,143 @@ public class NecessaryAlgorithm {
         }
 
         return result;
+    }
+
+    private int recursiveSum(int n) {
+        if (n == 1) return 1;
+        else return n + recursiveSum(n - 1);
+    }
+
+    /**
+     * 한 자릿수는 JumpingNumber로 취급
+     */
+    private static class JumpingNumber {
+        public JumpingNumber() {
+
+        }
+
+        public void printJumpingNumbers(int n) {
+            for (int i = 1; i <= 9 && i <= n; i++) {
+                printJumpNo(i, n);
+            }
+
+            System.out.println();
+
+            printOrderedJumpNo(n);
+        }
+
+        // BFS
+        private void printJumpNo(int startNum, int n) {
+            Queue<Integer> queue = new LinkedList<>();
+            queue.offer(startNum);
+
+            while (!queue.isEmpty()) {
+                startNum = queue.poll();
+                int lastDigit = startNum % 10;
+
+                if (startNum <= n) {
+                    System.out.print(startNum + " ");
+
+                    if (lastDigit == 0) {
+                        queue.offer(startNum * 10 + (lastDigit + 1));
+                    } else if (lastDigit == 9) {
+                        queue.offer(startNum * 10 + (lastDigit - 1));
+                    } else {
+                        queue.offer(startNum * 10 + (lastDigit + 1));
+                        queue.offer(startNum * 10 + (lastDigit - 1));
+                    }
+                }
+            }
+        }
+
+        // BFS
+        private void printOrderedJumpNo(int n) {
+            Queue<Integer> queue = new LinkedList<>();
+
+            for (int i = 1; i <= 9 && i <= n; i++) {
+                queue.offer(i);
+            }
+
+            while (!queue.isEmpty()) {
+                int startNum = queue.poll();
+                int lastDigit = startNum % 10;
+                
+                if (startNum <= n) {
+                    System.out.print(startNum + " ");
+
+                    if (lastDigit == 0) {
+                        queue.offer(startNum * 10 + (lastDigit + 1));
+                    } else if (lastDigit == 9) {
+                        queue.offer(startNum * 10 + (lastDigit - 1));
+                    } else {
+                        queue.offer(startNum * 10 + (lastDigit + 1));
+                        queue.offer(startNum * 10 + (lastDigit - 1));
+                    }
+                }
+            }
+        }
+    }
+
+    private void bubbleSort(int[] items) {
+        int length = items.length;
+        int tmp;
+
+        for (int i = 0; i < length - 1; i++) {
+            for (int j = 0; j < length - 1; j++) {
+                if (items[j] > items[j+1]) { // 앞원소가 더 크다면
+                    tmp = items[j]; // 앞 원소 임시저장
+                    items[j] = items[j+1]; // 앞자리에 뒷원소를 넣고
+                    items[j+1] = tmp; // 뒷자리에 앞원소를 넣음
+                }
+            }
+        }
+
+        for (int i = 0; i < length; i++) {
+            System.out.println("bublleSort() " + items[i]);
+        }
+    }
+
+    private static class DecimalToBinary {
+        public DecimalToBinary() {
+
+        }
+
+        public void printBinary(int input) {
+            String binaryStr = "";
+
+            int quo = -1;
+            int rem = -1;
+
+            while (true) {
+                quo = input / 2;
+                rem = input % 2;
+                binaryStr = rem + binaryStr;
+
+                if (quo == 0) break;
+
+                input = quo;
+            }
+            System.out.println("printBinary: " + binaryStr);
+        }
+    }
+
+    private static class RandomShuffle {
+        public RandomShuffle() {
+
+        }
+        public static void printArrayShuffle(int[] input) {
+            for (int i = 0; i < input.length; i++) {
+                int first = (int) (Math.random() * input.length);
+                int second = (int) (Math.random() * input.length);
+
+                int tmp = input[first];
+                input[first] = input[second];
+                input[second] = tmp;
+            }
+
+            for (int item : input) {
+                System.out.print(item + " ");
+            }
+        }
     }
 }
