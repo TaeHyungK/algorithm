@@ -137,5 +137,6 @@ gradle-app.setting
 baemin/
 codility/
 kakao/
+socar/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
