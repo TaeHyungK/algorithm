@@ -39,6 +39,9 @@
 # *.iml
 # *.ipr
 
+# mac OS
+.DS_Store
+
 # CMake
 cmake-build-*/
 
