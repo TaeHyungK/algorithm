@@ -143,5 +143,6 @@ kakao/
 socar/
 hyperconnect/
 mashkorea/
+line/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
