@@ -144,5 +144,6 @@ socar/
 hyperconnect/
 mashkorea/
 line/
+naver/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
