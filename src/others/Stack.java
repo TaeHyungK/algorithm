@@ -37,6 +37,21 @@ public class Stack {
         return list.isEmpty();
     }
 
+    public int search(Object obj) {
+        if (obj == null) {
+            System.out.println("Parameter can not null.");
+            return -1;
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            Object item = list.get(i);
+            if (obj.hashCode() == item.hashCode()) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     @Override
     public String toString() {
         return "Stack{" +

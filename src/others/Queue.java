@@ -32,6 +32,15 @@ public class Queue {
         return list.get(0);
     }
 
+    public void remove() {
+        if (isEmpty()) {
+            System.out.println("Can not remove item. Because Queue is empty");
+            return;
+        }
+
+        list.remove(0);
+    }
+
     public boolean isEmpty() {
         return list.isEmpty();
     }
