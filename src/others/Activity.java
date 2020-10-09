@@ -36,6 +36,10 @@ public class Activity {
         System.out.println(queue.poll());
         queue.offer(60);
         System.out.println(queue.peek());
+        queue.offer(70);
+        queue.offer(80);
+        System.out.println(queue);
+        queue.remove();
         System.out.println(queue);
     }
 }
