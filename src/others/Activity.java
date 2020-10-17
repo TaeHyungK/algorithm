@@ -41,5 +41,16 @@ public class Activity {
         System.out.println(queue);
         queue.remove();
         System.out.println(queue);
+
+        System.out.println("\n-------LinkedList-------");
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("a");
+        linkedList.insert("b");
+        linkedList.insert("c");
+        System.out.println(linkedList.toString());
+        linkedList.delete();
+        System.out.println(linkedList.toString());
+        LinkedList.Node searchNode = linkedList.getNode("a");
+        System.out.println(searchNode.toString());
     }
 }
