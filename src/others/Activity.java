@@ -52,5 +52,13 @@ public class Activity {
         System.out.println(linkedList.toString());
         LinkedList.Node searchNode = linkedList.getNode("a");
         System.out.println(searchNode.toString());
+        System.out.println(linkedList.getIndex("a"));
+        System.out.println(linkedList.getNode(1));
+        linkedList.insert("c");
+        linkedList.insert("d");
+        linkedList.insert("e");
+        System.out.println(linkedList.toString());
+        linkedList.delete(3);
+        System.out.println(linkedList.toString());
     }
 }

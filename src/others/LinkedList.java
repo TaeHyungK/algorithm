@@ -27,6 +27,15 @@ public class LinkedList {
         }
     }
 
+    // insert specific position
+    public void insert(int position, Object data) {
+        Node newNode = new Node(data);
+        Node temp = getNode(position);
+
+        newNode.link = head.link;
+        temp.link = newNode;
+    }
+
     // delete last position
     public void delete() {
         if (head.link == null) {
@@ -44,6 +53,25 @@ public class LinkedList {
         }
     }
 
+    // delete spcific position
+    public void delete(int position) {
+        if (position == 0) {
+            Node temp = head;
+            Node next = head.link;
+
+            temp.link = null;
+            head = next;
+            return;
+        }
+
+        Node preNode = getNode(position - 1);
+        Node curNode = preNode.link;
+        Node nextNode = curNode.link;
+
+        preNode.link = nextNode;
+        curNode = null;
+    }
+
     public Node getNode(Object data) {
         Node temp = head;
 
@@ -56,6 +84,37 @@ public class LinkedList {
         }
 
         return temp;
+    }
+
+    public Node getNode(int index) {
+        Node temp = head;
+
+        int i = 0;
+        while (temp != null) {
+            if (i == index) {
+                return temp;
+            }
+            temp = temp.link;
+            i++;
+        }
+
+        return head;
+    }
+
+    public int getIndex(Object data) {
+        int index = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            if (data.hashCode() == temp.getData().hashCode()) {
+                return index;
+            } else {
+                temp = temp.link;
+            }
+            index++;
+        }
+
+        return -1;
     }
 
     @Override
