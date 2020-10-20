@@ -2,6 +2,11 @@ package others;
 
 public class Activity {
     public static void main(String[] args) {
+        System.out.println("\n-------Graph------");
+        Graph graph = new Graph(3);
+        graph.add(1, 2);
+        graph.print();
+
         System.out.println("\n-------Binary Tree------");
         BinaryTree binaryTree = new BinaryTree(5);
         BinaryTree left = new BinaryTree(3);
@@ -12,13 +17,12 @@ public class Activity {
         System.out.println(binaryTree.getLeft());
         System.out.println(binaryTree.getRight());
 
-
         System.out.println("\n-------Stack------");
         Stack stack = new Stack();
         stack.push(10);
         System.out.println(stack.pop());
         System.out.println(stack);
-        stack.peek();
+        System.out.println(stack.peek());
         System.out.println(stack.pop());
         stack.push(20);
         System.out.println(stack.peek());
@@ -32,7 +36,7 @@ public class Activity {
         queue.offer(50);
         System.out.println(queue.poll());
         System.out.println(queue);
-        queue.peek();
+        System.out.println(queue.peek());
         System.out.println(queue.poll());
         queue.offer(60);
         System.out.println(queue.peek());

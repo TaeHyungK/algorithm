@@ -30,10 +30,10 @@ public class LinkedList {
     // insert specific position
     public void insert(int position, Object data) {
         Node newNode = new Node(data);
-        Node temp = getNode(position);
+        Node preNode = getNode(position - 1);
 
-        newNode.link = head.link;
-        temp.link = newNode;
+        newNode.link = preNode.link;
+        preNode.link = newNode;
     }
 
     // delete last position
@@ -42,18 +42,16 @@ public class LinkedList {
             // 리스트에 데이터가 head 하나뿐인 경우
             head = null;
         } else {
-            Node temp = head.link;
             Node pre = head;
-            while (temp.link != null) {
-                pre = temp;
-                temp = temp.link;
+            while (pre.link.link != null) {
+                pre = pre.link;
             }
 
             pre.link = null;
         }
     }
 
-    // delete spcific position
+    // delete specific position
     public void delete(int position) {
         if (position == 0) {
             Node temp = head;
@@ -65,8 +63,8 @@ public class LinkedList {
         }
 
         Node preNode = getNode(position - 1);
-        Node curNode = preNode.link;
-        Node nextNode = curNode.link;
+        Node curNode = preNode.link; // getNode(position)
+        Node nextNode = curNode.link; // getNode(position + 1)
 
         preNode.link = nextNode;
         curNode = null;
