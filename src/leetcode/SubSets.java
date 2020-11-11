@@ -20,18 +20,10 @@ public class SubSets {
         // Permutations 문제와 동일하지만 결과 데이터를 넣을 때 r 개를 뽑은 것처럼 r 까지만 리스트를 구성하여 넣어준다.
         // 단, nums.length 만큼 골랐을 때는 for 문을 돌지 않기 때문에 따로 넣어줌.
         //  -> 순서가 없는 순열이라 {1,3}, {3,1} 과 같이 모든 값이 들어가게 되어 틀림.
-//        List<Integer> first = new ArrayList<>();
-//        for (int i = 0; i < nums.length; i++) {
-//            first.add(nums[i]);
+        // # 스터디를 진행하며 수정함. # 아래 코드는 정상 동작하는 코드임.
+//        for (int i = 0; i <= nums.length; i++) {
+//            permutation(nums, 0, i, result, new ArrayList<>());
 //        }
-//        result.add(first);
-//
-//        Set<List<Integer>> setData = new HashSet<>();
-//        for (int i = 0; i < nums.length; i++) {
-//            permutation(nums, 0, i, setData);
-//        }
-//
-//        result.addAll(setData);
 
         // 두번째 풀이.
         // 구글링으로 조합을 구하는 방법을 찾아보았다.
@@ -44,6 +36,23 @@ public class SubSets {
         return result;
     }
 
+    // 순열을 이용해 푸는 방법
+    private static void permutation(int[] nums, int depth, int r, List<List<Integer>> result, List<Integer> items) {
+        if (depth == r) {
+            List<Integer> temps = new ArrayList<>();
+            temps.addAll(items);
+            result.add(temps);
+            return;
+        }
+
+        for (int i = depth; i < nums.length; i++) {
+            items.add(nums[i]);
+            permutation(nums, i + 1, r, result, items); // 재귀를 통해 순열을 만듦.
+            items.remove(items.size() - 1);
+        }
+    }
+
+    // combination 으로 푸는 방법.
     private static void combination(int[] nums, boolean[] visited, int depth, int r, List<List<Integer>> result) {
         if (r == 0) {
             List<Integer> list = new ArrayList<>();
@@ -65,27 +74,4 @@ public class SubSets {
         visited[depth] = false;
         combination(nums, visited, depth + 1, r, result);
     }
-
-//    private static void permutation(int[] nums, int depth, int r, Set<List<Integer>> setData) {
-//        if (depth == r) {
-//            List<Integer> list = new ArrayList<>();
-//            for (int i = 0; i < r; i++) {
-//                list.add(nums[i]);
-//            }
-//            setData.add(list);
-//            return;
-//        }
-//
-//        for (int i = depth; i < nums.length; i++) {
-//            swap(nums, depth, i);
-//            permutation(nums, depth + 1, r, setData); // 재귀를 통해 순열을 만듦.
-//            swap(nums, depth, i); // 다음 순열을 찾기 위해 백트래킹(원상복귀)
-//        }
-//    }
-//
-//    private static void swap(int[] nums, int depth, int i) {
-//        int temp = nums[depth];
-//        nums[depth] = nums[i];
-//        nums[i] = temp;
-//    }
 }
