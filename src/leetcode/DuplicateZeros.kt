@@ -1,12 +1,12 @@
 package leetcode
 
 fun main() {
-    val solution = Solution()
+    val solution = DuplicateZeros()
     val arr = intArrayOf(1, 0, 2, 3, 0, 4, 5, 0)
     solution.duplicateZeros(arr)
 }
 
-class Solution {
+class DuplicateZeros {
     /**
      * https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3245/
      *
