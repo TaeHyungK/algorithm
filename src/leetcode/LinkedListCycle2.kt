@@ -9,20 +9,20 @@ fun main() {
 //    head.next?.next?.next = ListNode(-1)
 //    head.next?.next?.next?.next = head.next
 
-//    val head = ListNode(1)
-//    head.next = ListNode(2)
-//    head.next?.next = head.next
-
     val head = ListNode(1)
+    head.next = ListNode(2)
+    head.next?.next = head.next
 
-    val result = LinkedListCycle1().hasCycle(head)
+//    val head = ListNode(1)
+
+    val result = LinkedListCycle2().detectCycle(head)
     println("result: $result")
 }
 
-class LinkedListCycle1 {
-    fun hasCycle(head: ListNode?): Boolean {
+class LinkedListCycle2 {
+    fun detectCycle(head: ListNode?): ListNode? {
         if (head == null) {
-            return false
+            return null
         }
 
         val listNodeList = mutableListOf<ListNode>()
@@ -30,21 +30,13 @@ class LinkedListCycle1 {
         var curNode = head
         while (curNode?.next != null) {
             if (listNodeList.contains(curNode)) {
-                return true
+                return curNode
             }
 
             listNodeList.add(curNode)
             curNode = curNode.next
         }
 
-        return false
-    }
-}
-
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-
-    override fun toString(): String {
-        return "ListNode($`val`)"
+        return null
     }
 }
